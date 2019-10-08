@@ -31,6 +31,4 @@ export class AppComponent {
   sortedArticleByRating(){
     return this.articles.sort((a: Article, b: Article) => b.votes - a.votes);
   }
-
-
 }
