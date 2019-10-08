@@ -25,5 +25,9 @@
                 downvote
             </a>
         </li>
+        <!--Administrator Flag Button-->
+        <li>
+            <button *ngIf="isAdministrator()"(click)="flagArticle()" class="ui positive right floated button" >flag</button>
+        </li>
     </ul>
 </div>

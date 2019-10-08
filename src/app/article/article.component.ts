@@ -26,6 +26,10 @@ export class ArticleComponent implements OnInit {
     return false;
   }
 
+  isAdministrator(): boolean{
+    return this.article.isAdministrator();
+  }
+  
   ngOnInit() {
   }
 

@@ -10,7 +10,12 @@
       <label for="link">Link:</label> 
       <input #newlink name="link" > 
     </div> 
-    <button (click)="addArticle(newtitle, newlink)" class="ui positive right floated button"> Submit link </button>
+    
+    <div class="field">
+      <label for="role">Role <i>(type 'user' or 'administrator') </i></label>
+      <input #newrole name="role">
+    </div>
+    <button (click)="addArticle(newtitle, newlink, newrole)" class="ui positive right floated button"> Submit link </button>
 </form>
 
 <!--Start rendering articles here-->
